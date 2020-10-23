@@ -3,21 +3,15 @@
 
 <main>
     <div class="gradiente">
+
         <div class="text-center p-5">
+
             <div class="text-center mb-5">
                 <img src="assets/img/logo.png" alt="">
             </div>
             <!--fim da div logo-->
 
             <form class="bg-white p-5 m-5">
-                <div class="col-auto">
-                    <div class="input-group my-2 ">
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome Completo">
-                        <div class="input-group-prepend align-items-right ">
-                            <div class="input-group-text "> <i class="far fa-user"></i> </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="col-auto">
                     <div class="input-group my-2">
@@ -40,10 +34,10 @@
 
                 <div class="text-center p-3">
                     <div>
-                        <button type="submit" class="btn btn-primary mb-3 badge badge-pill ">Entrar</button>
+                        <button type="submit" class="btn btn-primary mb-3  px-5 rounded-pill">Entrar</button>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-info mb-4  badge badge-pill ">Cadastrar</button>
+                        <button type="submit" class="btn btn-outline-primary mb-3  px-4 rounded-pill ">Cadastrar</button>
                     </div>
                 </div>
                 <!--criar página de recuperação de senha-->
