@@ -12,7 +12,7 @@
             </div>
             <!--fim da div logo-->
 
-            <form class="bg-white p-5 m-5" method="POST" action="">
+            <form class="bg-white mx-auto p-5 m-5 col-12 col-md-4" method="POST" action="">
                 <h1 class="text-center pb-5 text-primary">Login</h1>
                 <?php
                 if (isset($_POST['entrar'])) {
