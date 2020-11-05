@@ -8,12 +8,12 @@
         <div class="text-center p-5">
 
             <div class="text-center mb-5">
-                <img src="assets/img/logo.png" alt="">
+                <img width="200px" src="assets/img/logo.png" alt="">
             </div>
             <!--fim da div logo-->
-            <h1 class="text-center p-5">Login</h1>
 
             <form class="bg-white p-5 m-5" method="POST" action="">
+                <h1 class="text-center pb-5 text-primary">Login</h1>
                 <?php
                 if (isset($_POST['entrar'])) {
                     $email =    $_POST['email'];
@@ -24,7 +24,9 @@
                     if ($total_registro > 0) {
                         header("location:cadastro.php");
                     } else {
-                        echo '<span style="color: red; text-align: center;">Login ou senha incorreto</span>';
+                        echo '<div class="alert alert-danger" role="alert">
+                        Login ou senha incorreta!
+                      </div>';
                     }
                 }
 
@@ -57,7 +59,7 @@
                         <button type="submit" name="entrar" value="entrar" class="btn btn-primary mb-3  px-5 rounded-pill">Entrar</button>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-outline-primary mb-3  px-4 rounded-pill " onclick="redirecionar_pagina_cadastro();">Cadastrar</button>
+                        <a type="submit" class="btn btn-outline-primary mb-3  px-4 rounded-pill " href="cadastro">Cadastrar</a>
                     </div>
                 </div>
                 <!--criar página de recuperação de senha-->
