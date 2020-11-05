@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="scripts.js"></script>
     <!--font dos ícones -->
 
     <title>Hello, world!</title>
