@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "projeto_squad_3";
+$database = "estou_de_volta";
 
 global $conex;
 

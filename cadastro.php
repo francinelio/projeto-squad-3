@@ -103,7 +103,7 @@
                 <div class="text-center p-3">
                     <button type="submit" name="cadastrar" class="btn btn-outline-primary mb-3  px-4 rounded-pill ">Cadastrar</button>
                 </div>
-                <p>Esquecir a senha: <a href="#"> Clique aqui</a></p>
+                <p>Já tem cadastro? <a href="login">Entre aqui.</a></p>
 
         </div>
 

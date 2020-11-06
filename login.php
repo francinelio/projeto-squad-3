@@ -22,7 +22,7 @@
                     $result = $conexao->query($sql);
                     $total_registro = mysqli_num_rows($result);
                     if ($total_registro > 0) {
-                        header("location:cadastro.php");
+                        header("location:index.php");
                     } else {
                         echo '<div class="alert alert-danger" role="alert">
                         Login ou senha incorreta!
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <!--criar página de recuperação de senha-->
-                <p>Esquecir a senha: <a href="recuperar_login.php"> Clique aqui</a></p>
+                <p>Esquecir a senha: <a href="recuperar_login"> Clique aqui</a></p>
 
             </form>
             <!--fim do formulário-->
