@@ -1,5 +1,5 @@
 <?php require("includes/header.php"); ?>
-<?php require("conexao.php"); ?>
+<?php require("includes/conexao.php"); ?>
 
 
 
@@ -11,9 +11,9 @@
 
         <div class="text-center p-5">
 
-            <div class="text-center mb-5">
+            <a href="index.php" class="text-center mb-5">
                 <img width="200px" src="assets/img/logo.png" alt="">
-            </div>
+            </a>
             <!--fim da div logo-->
 
             <form class="bg-white mx-auto p-5 m-5 col-12 col-md-4" method="POST" action="">
@@ -29,7 +29,7 @@
                     $telefone =    $_POST['telefone'];
                     $endereco =    $_POST['endereco'];
                     $sql = "select * from usuario where email =  '$email'";
-                    $result = $conexao->query($sql);
+                    $result = $conn->query($sql);
                     $total_registro = mysqli_num_rows($result);
 
                     if ($total_registro > 0) {
@@ -39,11 +39,11 @@
                     } else {
 
                         $sql = "insert into usuario (nome,  email, senha, telefone, endereco) values ('$nome', '$email', '$senha','$telefone', '$endereco')";
-                        $insert = $conexao->query($sql);
+                        $insert = $conn->query($sql);
                         echo '<div class="alert alert-success" role="alert">
                         Cadastro realizado com sucesso!!
                       </div>';
-                        header("Refresh: 5;url=index.php");
+                        header("Refresh: 5;url=vagas.php");
                     }
                 }
 

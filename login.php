@@ -1,5 +1,5 @@
 <?php require("includes/header.php"); ?>
-<?php require("conexao.php"); ?>
+<?php require("includes/conexao.php"); ?>
 
 
 <main>
@@ -7,9 +7,9 @@
 
         <div class="text-center p-5">
 
-            <div class="text-center mb-5">
+            <a class="text-center mb-5" href="index.php">
                 <img width="200px" src="assets/img/logo.png" alt="">
-            </div>
+            </a>
             <!--fim da div logo-->
 
             <form class="bg-white mx-auto p-5 m-5 col-12 col-md-4" method="POST" action="">
@@ -19,10 +19,10 @@
                     $email =    $_POST['email'];
                     $senha =   md5($_POST['senha']);
                     $sql = "select * from usuario where email =  '$email' and senha = '$senha'";
-                    $result = $conexao->query($sql);
+                    $result = $conn->query($sql);
                     $total_registro = mysqli_num_rows($result);
                     if ($total_registro > 0) {
-                        header("location:index.php");
+                        header("location:vagas.php");
                     } else {
                         echo '<div class="alert alert-danger" role="alert">
                         Login ou senha incorreta!
