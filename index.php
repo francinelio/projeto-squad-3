@@ -57,10 +57,10 @@
 
 
 
-                <a class="btn btn-primary btn-lg tamanhobotao mb-3 mt-5" href="login">Entrar</a>
+                <a class="btn btn-primary btn-lg tamanhobotao mb-3 mt-5" href="login.php">Entrar</a>
 
                 <br>
-                <a class="btn btn-primary btn-lg tamanhobotao" href="cadastro">Cadastrar</a>
+                <a class="btn btn-primary btn-lg tamanhobotao" href="cadastro.php">Cadastrar</a>
 
             </div>
         </div>

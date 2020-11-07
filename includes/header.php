@@ -37,7 +37,7 @@
                     <a class="nav-link" href="parceiros.php"><i class="fas fa-graduation-cap"></i> Parceiros </a>
                 </li>
             </ul>
-            <div class="container-fluid text-right">
+            <div class="container-fluid text-center text-md-right">
                 <a href="login.php" class="btn btn-outline-light">Entrar</a>
             </div>
         </div>

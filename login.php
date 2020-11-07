@@ -59,11 +59,11 @@
                         <button type="submit" name="entrar" value="entrar" class="btn btn-primary mb-3  px-5 rounded-pill">Entrar</button>
                     </div>
                     <div>
-                        <a type="submit" class="btn btn-outline-primary mb-3  px-4 rounded-pill " href="cadastro">Cadastrar</a>
+                        <a type="submit" class="btn btn-outline-primary mb-3  px-4 rounded-pill " href="cadastro.php">Cadastrar</a>
                     </div>
                 </div>
                 <!--criar página de recuperação de senha-->
-                <p>Esquecir a senha: <a href="recuperar_login"> Clique aqui</a></p>
+                <p>Esquecir a senha: <a href="recuperar_login.php"> Clique aqui</a></p>
 
             </form>
             <!--fim do formulário-->

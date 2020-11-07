@@ -1,5 +1,5 @@
 <?php require("includes/header.php"); ?>
-<?php require("conexao.php"); ?>
+<?php require("includes/conexao.php"); ?>
 
 
 <main>
@@ -18,7 +18,7 @@
                 if (isset($_POST['entrar'])) {
                     $email =    $_POST['email'];
                     $sql = "select * from usuario where email =  '$email'";
-                    $result = $conexao->query($sql);
+                    $result = $conn->query($sql);
                     $total_registro = mysqli_num_rows($result);
                     if ($total_registro > 0) {
                          echo '<div class="alert alert-success" role="alert">O link para alterar a senha foi enviado para seu email.</div>';
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <!--criar página de recuperação de senha-->
-                <p>Ainda não tem cadastro? <a href="cadastro"> Clique aqui</a></p>
+                <p>Ainda não tem cadastro? <a href="cadastro.php"> Clique aqui</a></p>
 
             </form>
             <!--fim do formulário-->
